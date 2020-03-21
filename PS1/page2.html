@@ -16,15 +16,23 @@
       vertical-align: top;
     }
     label:first-child { width: 40%; }
-    input[type=checkbox] { display: none; }
+    input[type=checkbox] { display: none; 
+    }
     label:last-child { text-align: left; }
     input[type=submit] {
       display: flex;
       margin: 0 auto;
     }
-    svg { cursor: pointer }
+    textarea {
+    resize: vertical; 
+    } 
+    svg { cursor: pointer;  }
+    input:checked + svg * {
+      fill: red;
+    }
+ 
     [class^=notification] {
-      position: fixed;
+      position: static;
       top: 10px;
       left: 0;
       right: 0;
@@ -35,8 +43,8 @@
     }
     [class=notification-success] { background-color: rgba(0, 255, 0, .3); }
     [class=notification-error] { background-color: rgba(255, 0, 0, .3); }
-    [class=notification-success]:before { content: 'Форма заполнена верно'; }
-    [class=notification-error]:before { content: 'Исправьте все ошибки в форме и попробуйте ещё раз'; }
+    [class=notification-success]:before { content: 'Форма заполнена верно';}
+    [class=notification-error]:before { content: 'Исправьте все ошибки в форме и попробуйте ещё раз';}
   </style>
 </head>
 <body>
@@ -45,22 +53,22 @@
   <fieldset>
     <legend>Информация про вас</legend>
     <div class="control">
-      <label>Год вашего рождения</label>
-      <input>
+      <label for="year">Год вашего рождения</label>
+      <input type="number" id="year" min="1900" max="2020" autofocus><br><br>
     </div>
     <div class="control">
-      <label>Расскажите о своих увлечениях</label>
-      <textarea></textarea>
+      <label for="hobbies">Расскажите о своих увлечениях</label>
+      <textarea id="hobbies" name="hobbies"></textarea>
     </div>
     <div class="control">
-      <label>Цвет ваших глаз</label>
-      <label><input type="radio">Голубой</label>
-      <label><input type="radio">Серый</label>
-      <label><input type="radio">Карий</label>
+      <label for="grey_eyes">Цвет ваших глаз</label>
+      <label><input type="radio" id="blue_eyes" name="eyes" required>Голубой</label>
+      <label><input type="radio" id="grey_eyes" name="eyes" required>Серый</label>
+      <label><input type="radio" id="brown_eyes" name="eyes" required>Карий</label>
     </div>
     <div class="control">
       <label>Ваша последняя домашка на п2п</label>
-      <input type="file">
+      <input type="file" multiple accept="application/x-zip-compressed">
     </div>
     <div class="control">
       <label>Вам понравилось это задание?</label>
