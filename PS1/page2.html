@@ -26,12 +26,13 @@
     textarea {
     resize: vertical; 
     } 
-    svg { cursor: pointer; }
+    svg { cursor: pointer;  }
     input:checked + svg * {
       fill: red;
     }
+ 
     [class^=notification] {
-      position: fixed;
+      position: static;
       top: 10px;
       left: 0;
       right: 0;
@@ -42,8 +43,8 @@
     }
     [class=notification-success] { background-color: rgba(0, 255, 0, .3); }
     [class=notification-error] { background-color: rgba(255, 0, 0, .3); }
-    [class=notification-success]:before { content: 'Форма заполнена верно'; }
-    [class=notification-error]:before { content: 'Исправьте все ошибки в форме и попробуйте ещё раз'; }
+    [class=notification-success]:before { content: 'Форма заполнена верно';}
+    [class=notification-error]:before { content: 'Исправьте все ошибки в форме и попробуйте ещё раз';}
   </style>
 </head>
 <body>
