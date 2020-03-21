@@ -48,18 +48,18 @@
   <fieldset>
     <legend>Информация про вас</legend>
     <div class="control">
-      <label>Год вашего рождения</label>
-      <input type="number" min="1900" max="2020" autofocus><br><br>
+      <label for="year">Год вашего рождения</label>
+      <input type="number" id="year" min="1900" max="2020" autofocus><br><br>
     </div>
     <div class="control">
-      <label>Расскажите о своих увлечениях</label>
-      <textarea></textarea>
+      <label for="hobbies">Расскажите о своих увлечениях</label>
+      <textarea id="hobbies" name="hobbies"></textarea>
     </div>
     <div class="control">
-      <label>Цвет ваших глаз</label>
-      <label><input type="radio" id="blue" name="eyes" required>Голубой</label>
-      <label><input type="radio" id ="grey" name="eyes" required>Серый</label>
-      <label><input type="radio" id="brown" name="eyes" required>Карий</label>
+      <label for="grey_eyes">Цвет ваших глаз</label>
+      <label><input type="radio" id="blue_eyes" name="eyes" required>Голубой</label>
+      <label><input type="radio" id="grey_eyes" name="eyes" required>Серый</label>
+      <label><input type="radio" id="brown_eyes" name="eyes" required>Карий</label>
     </div>
     <div class="control">
       <label>Ваша последняя домашка на п2п</label>
