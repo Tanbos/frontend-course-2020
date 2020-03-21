@@ -16,7 +16,8 @@
       vertical-align: top;
     }
     label:first-child { width: 40%; }
-    input[type=checkbox] { display: none; }
+    input[type=checkbox] { display: none; 
+    }
     label:last-child { text-align: left; }
     input[type=submit] {
       display: flex;
@@ -24,8 +25,11 @@
     }
     textarea {
     resize: vertical; 
-   } 
-    svg { cursor: pointer }
+    } 
+    svg { cursor: pointer; }
+    input:checked + svg * {
+      fill: red;
+    }
     [class^=notification] {
       position: fixed;
       top: 10px;
