@@ -86,7 +86,14 @@
       display: flex;
       flex-direction: column;
     }
-  </style>
+    #close_button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      width: 20px;
+    }
+</style>
 </head>
 <body>
 <header class="row">
@@ -118,6 +125,7 @@
     <button id="show">Дізнатись більше про нас</button>
   </div>
   <div id="modal" class="hidden">
+    <button id="close_button" class="hide">[X]</button>
     <h2>Наша супер-команда</h2>
     <div class="team">
       <img src="https://loremflickr.com/100/80?lock=1" class="person" data-name="Pauline R. Skiles">
