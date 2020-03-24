@@ -1,70 +1,87 @@
-﻿<html lang="ua">
+﻿<!DOCTYPE html>
+<html lang="uk">
 <head>
-<title>SPAGHETTI.ua</title>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Замовити додому їжу: макарони, спагетті. Безкоштовна доставка. Меню. Широкий асортимент">
+  <meta name="keywords" content="макарони, спагетті, їжа, замовлення, доставка">
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="Spaghetti.ua"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://spaghetti.ua"/>
+  <meta property="og:image" content="./images/pasta.jpg"/>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spaghetti.ua">
+  <meta name="twitter:description" content="Замовити додому їжу: макарони, спагетті. Безкоштовна доставка">
+  <meta name="twitter:image:src" content="./images/pasta.jpg">
+  <meta name="twitter:url" content="http://spaghetti.ua">
+  <meta name="twitter:domain" content="spaghetti.ua">
+  <meta name="twitter:site" content="@spaghetti.ua">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPAGHETTI.ua</title>
+  <link rel="canonical" href="http://spaghetti.ua"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    h1, h3 {
+      text-shadow: 3px 2px black;
+      color: white;
+    }
 
-<meta name="description" content="Замовити додому макарони, спагетті. Безкоштовна доставка. Меню. Широкий асортимент">
-<meta name="keywords" content="макарони, спагетті, замовлення, доставка">
-<meta name="robots" content="index, follow" />
-<meta property="og:title" content="Spaghetti" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://spaghetti.ua" />
-<meta property="og:image" content="./images/pasta.jpg" />
-<link rel = "canonical" href = "http://spaghetti.ua"/>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<style>
-  h1 {
-    -webkit-text-stroke:1px black;
-  }
+    body {
+      margin: 0;
+      background: url("./images/pasta.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
 
-  h3 {
-    text-shadow: 3px 2px black
-  }
+    header {
+      text-align: center;
+    }
 
-  body {
-    margin: 0; 
-    background: url("./images/pasta.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-   }
+    .button {
+      display: inline-block;
+      vertical-align: bottom;
+      text-align: center;
+      line-height: 30px;
+      background: white;
+      border: none;
+    }
 
-  .button {
-    display: inline-block;  
-    vertical-align: bottom;
-    text-align: center;
-    line-height: 30px;
-    background: white;
-  }
+    .button:hover {
+      background-color: lightgrey;
+      cursor: pointer;
+    }
 
-  .button:hover { background-color: lightgrey; cursor: pointer;}
+    main {
+      text-align: center;
+      margin-top: 150px;
+      font-size: 2rem;
+    }
 
-  main {
-    text-align: center;
-    margin-top: 150px;
-    font-size: 2rem;
-    color: white;
-  }
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, .7);
+      text-align: center;
+    }
 
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, .7);
-    text-align: center;
-  }
+    footer div {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px;
+    }
 
-  footer div {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 10px;
-  }
-</style>
+    footer img {
+      vertical-align: middle;
+    }
+  </style>
 </head>
-<body style="overflow: hidden;">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<header align="middle">
+<body>
+<header>
   <br>
-  <h1 style="color: white">SPAGHETTI.ua</h1>
+  <h1>SPAGHETTI.ua</h1>
   <hr>
   <button class="button">Меню</button>
   <button class="button">Доставка та оплата</button>
@@ -75,10 +92,10 @@
   <h3>Безкоштовна доставка в радіусі 5км!</h3>
 </main>
 <footer>
-  <div><img width="20" src="./images/phone.svg"></div>
-  <div><a href="tel:+380987654321">+380 98 765 43 21</a></div>
-  <div><img width="20" src="./images/email.svg"></div>
-  <div><a href="mailto:buy@spaghetti.ua">buy@spaghetti.ua</a></div>
+  <div><img width="20" src="./images/phone.svg" alt="phone spaghetti.ua">
+    <a href="tel:+380987654321">+380 98 765 43 21</a></div>
+  <div><img width="20" src="./images/email.svg" alt="email spaghetti.ua">
+    <a href="mailto:buy@spaghetti.ua">buy@spaghetti.ua</a></div>
 </footer>
 </body>
 </html>
