@@ -3,51 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <title>Фабрика джинсів</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:400,700&display=swap&subset=cyrillic-ext">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic-ext">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic-ext">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous"/>
   <style>
     body {
       background-image: url("images/p3-bg.png");
       font-family: 'Roboto', 'Arial', sans-serif;
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
     }
+
     header {
       position: static;
       width: calc(100% - 40px);
       padding: 20px;
       background: #222222;
-      z-index: 1;
       color: white;
     }
+
     footer {
-      position: absolute;
-      bottom: 0;
       width: calc(100% - 200px);
       padding: 20px 100px;
       background: rgba(255, 255, 255, .55);
     }
-    nav { font-family: 'Roboto Slab', serif }
-    nav a { margin: 0 10px }
+
+    nav {
+      font-family: 'Roboto Slab', serif
+    }
+
+    nav a {
+      margin: 0 10px
+    }
+
     a {
       line-height: 150%;
       text-decoration: none;
       color: inherit;
     }
-    a:hover { text-decoration: underline }
+
+    a:hover {
+      text-decoration: underline
+    }
+
     a.active {
       text-decoration: underline;
       font-weight: bold;
     }
+
     .row {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
     }
-    main { position: relative }
+
+    main {
+      position: relative;
+      padding-top: 20px;
+      flex-grow: 1;
+    }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
     }
+
     button {
       width: 250px;
       display: block;
@@ -57,35 +81,64 @@
       text-align: center;
       border: none;
     }
+
     button:hover {
       cursor: pointer;
       background-color: #eeeeee;
     }
-    .hidden { display: none }
+
+    .hidden {
+      display: none
+    }
+
     #modal {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       margin: auto;
-      max-width: 900px;
+      max-width: 300px;
       background-color: white;
       border-radius: 10px;
     }
+
     .team {
-      overflow: scroll; 
       display: flex;
+      overflow: scroll;
       justify-content: space-evenly;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
+      max-height: 500px;
     }
+
     .person {
-      width: 26%;
+      height: 200px;
+      width: 200px;
       margin-bottom: 20px;
     }
+
+    .person img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 50%;
+    }
+
+    .person:hover:after {
+      content: attr(data-name);
+      position: relative;
+      top: -100px;
+      right: -20px;
+      text-align: center;
+      background-color: maroon;
+      color: white;
+    }
+
     footer nav {
       display: flex;
       flex-direction: column;
     }
+
     #close_button {
       position: absolute;
       top: 0;
@@ -106,6 +159,39 @@
 </header>
 <main>
   <div class="container">
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
+    <div>aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+      aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a aaaaaaaa aaaaa aaaaaaaaa aaaaaaa aaaaaaaaaaa aa aa a
+    </div>
     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita ipsa nemo officiis, quidem soluta!
       Blanditiis consequuntur et id, illo iste libero minima molestias pariatur recusandae, reiciendis unde vero vitae!
     </div>
@@ -113,10 +199,12 @@
       animi cumque doloribus error fugit inventore, nemo numquam quo repudiandae suscipit ut voluptates. Asperiores
       laudantium quos soluta!
     </div>
-    <div>Accusantium aliquid aspernatur commodi corporis dolorem ea ex expedita fugit illo ipsa iusto magnam nemo officiis
+    <div>Accusantium aliquid aspernatur commodi corporis dolorem ea ex expedita fugit illo ipsa iusto magnam nemo
+      officiis
       placeat porro possimus reiciendis rem rerum saepe sapiente sed sint sunt ullam ut, voluptate!
     </div>
-    <div>Ab accusamus adipisci, asperiores autem culpa eveniet ex explicabo iste iure, laboriosam magni modi nesciunt non
+    <div>Ab accusamus adipisci, asperiores autem culpa eveniet ex explicabo iste iure, laboriosam magni modi nesciunt
+      non
       nostrum nulla odio perspiciatis quidem quisquam rerum, sed similique tenetur unde? Accusamus, numquam, quisquam?
     </div>
     <div>Cum quam repellendus vero vitae. Asperiores assumenda dolorem illum minus ullam, veritatis voluptatum. Commodi
@@ -128,26 +216,66 @@
     <button id="close_button" class="hide">[X]</button>
     <h2>Наша супер-команда</h2>
     <div class="team">
-      <img src="https://loremflickr.com/100/80?lock=1" class="person" class="round" data-name="Pauline R. Skiles">
-      <img src="https://loremflickr.com/100/80?lock=2" class="person" class="round" data-name="Barbara T. Francisco">
-      <img src="https://loremflickr.com/100/80?lock=3" class="person" data-name="Anna R. Jones">
-      <img src="https://loremflickr.com/100/80?lock=4" class="person" data-name="Ralph G. Gardner">
-      <img src="https://loremflickr.com/100/80?lock=5" class="person" data-name="Brain A. Prim">
-      <img src="https://loremflickr.com/100/80?lock=6" class="person" data-name="George M. Proffitt">
-      <img src="https://loremflickr.com/100/80?lock=7" class="person" data-name="Karen S. Carter">
-      <img src="https://loremflickr.com/100/80?lock=8" class="person" data-name="James P. Russo">
-      <img src="https://loremflickr.com/100/80?lock=9" class="person" data-name="Rebecca J. Giordano">
-      <img src="https://loremflickr.com/100/80?lock=10" class="person" data-name="Thomas P. Swett">
-      <img src="https://loremflickr.com/100/80?lock=11" class="person" data-name="Tiffany N. Gardner">
-      <img src="https://loremflickr.com/100/80?lock=12" class="person" data-name="Jessica D. Musgrove">
-      <img src="https://loremflickr.com/100/80?lock=13" class="person" data-name="Henry B. Johnson">
-      <img src="https://loremflickr.com/100/80?lock=14" class="person" data-name="Edward T. Tovar">
-      <img src="https://loremflickr.com/100/80?lock=15" class="person" data-name="Jacqueline G. Robles">
-      <img src="https://loremflickr.com/100/80?lock=16" class="person" data-name="Betty D. Phillips">
-      <img src="https://loremflickr.com/100/80?lock=17" class="person" data-name="William C. Baker">
-      <img src="https://loremflickr.com/100/80?lock=18" class="person" data-name="Lauren D. Baize">
-      <img src="https://loremflickr.com/100/80?lock=19" class="person" data-name="Terry S. Nelson">
-      <img src="https://loremflickr.com/100/80?lock=20" class="person" data-name="Dorothy D. Battaglia">
+      <div class="person" data-name="Pauline R. Skiles">
+        <img src="https://loremflickr.com/100/80?lock=1" alt="Pauline R. Skiles з фабрики джинсів ">
+      </div>
+      <div class="person" data-name="Barbara T. Francisco">
+        <img src="https://loremflickr.com/100/80?lock=2" alt="Barbara T. Francisco з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Anna R. Jones">
+        <img src="https://loremflickr.com/100/80?lock=3" alt="Anna R. Jones з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Ralph G. Gardner">
+        <img src="https://loremflickr.com/100/80?lock=4" alt="Ralph G. Gardner з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Brain A. Prim">
+        <img src="https://loremflickr.com/100/80?lock=5" alt="Brain A. Prim з фабрики джинсів">
+      </div>
+      <div class="person" data-name="George M. Proffitt">
+        <img src="https://loremflickr.com/100/80?lock=6" alt="George M. Proffitt з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Karen S. Carter">
+        <img src="https://loremflickr.com/100/80?lock=7" alt="Karen S. Carter з фабрики джинсів">
+      </div>
+      <div class="person" data-name="James P. Russo">
+        <img src="https://loremflickr.com/100/80?lock=8" alt="James P. Russo з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Rebecca J. Giordano">
+        <img src="https://loremflickr.com/100/80?lock=9" alt="Rebecca J. Giordano з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Thomas P. Swett">
+        <img src="https://loremflickr.com/100/80?lock=10" alt="Thomas P. Swett з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Tiffany N. Gardner">
+        <img src="https://loremflickr.com/100/80?lock=11" alt="Tiffany N. Gardner з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Jessica D. Musgrove">
+        <img src="https://loremflickr.com/100/80?lock=12" alt="Jessica D. Musgrove з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Henry B. Johnson">
+        <img src="https://loremflickr.com/100/80?lock=13" alt="Henry B. Johnson з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Edward T. Tovar">
+        <img src="https://loremflickr.com/100/80?lock=14" alt="Edward T. Tovar з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Jacqueline G. Robles">
+        <img src="https://loremflickr.com/100/80?lock=15" alt="Jacqueline G. Robles з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Betty D. Phillips">
+        <img src="https://loremflickr.com/100/80?lock=16" alt="Betty D. Phillips з фабрики джинсів">
+      </div>
+      <div class="person" data-name="William C. Baker">
+        <img src="https://loremflickr.com/100/80?lock=17" alt="William C. Baker з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Lauren D. Baize">
+        <img src="https://loremflickr.com/100/80?lock=18" alt="Lauren D. Baize з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Terry S. Nelson">
+        <img src="https://loremflickr.com/100/80?lock=19" alt="Terry S. Nelson з фабрики джинсів">
+      </div>
+      <div class="person" data-name="Dorothy D. Battaglia">
+        <img src="https://loremflickr.com/100/80?lock=20" alt="Dorothy D. Battaglia з фабрики джинсів">
+      </div>
     </div>
     <button class="hide">Крута у вас команда!</button>
   </div>
@@ -175,10 +303,10 @@
   <p>&copy; 2020 <a href="https://programming.kr.ua">Ш++</a>.</p>
 </footer>
 <script>
-    /*
-     Please never ever look at this script while you are learning at level 1.
-     You _don't need_ this for completing the task.
-   */
+  /*
+   Please never ever look at this script while you are learning at level 1.
+   You _don't need_ this for completing the task.
+ */
   show.onclick = () => modal.classList.remove("hidden");
   [...document.querySelectorAll('.hide')].forEach(h => h.onclick = () => modal.classList.add("hidden"));
 </script>
