@@ -11,26 +11,17 @@
   <title>Document</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">TravelUp</a>
-    </li>
-    <li class="nav-item disabled ">
-      <form class="form-inline" action="/action_page.php">
-        <input class="form-control mr-sm-2 form-control-dark bg-dark w-2" type="text" placeholder="Search">
-      </form>
-    </li>
-    <form name="search" action="#" method="get" class="form-inline form-search pull-right">
-      <div class="input-group">
-        <label class="sr-only" for="searchInput">Search</label>
-        <input class="form-control" id="searchInput" type="text" name="search" placeholder="Search">
-      </div>
-    </form>
-    <li class="nav-item px-3">
-      <a class="nav-link" href="#">Sign out</a>
-    </li>
-  </ul>
+<nav class="navbar  bg-dark navbar-dark">
+  <a class="navbar-brand">TravelUp</a>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control form-control-dark bg-dark text-light" type="search" placeholder="Search"
+           aria-label="Search">
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="https://getbootstrap.com/docs/4.4/examples/dashboard/#">Sign out</a>
+      </li>
+    </ul>
+  </form>
 </nav>
 <div class="container-fluid">
   <div class="row">
@@ -71,7 +62,6 @@
           <a class="nav-link" href="#"><i class="far fa-file-alt"></i> Year-end sale</a>
         </li>
       </ul>
-
     </nav>
     <div class="heading col-md-10 ">
       <div class="d-flex align-content-center justify-content-between align-items-center">
@@ -245,19 +235,15 @@
       </div>
       <div class="container-fluid">
         <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="#"><<</a></li>
+          <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
           <li class="page-item active"><a class="page-link" href="#">1</a></li>
           <li class="page-item "><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">>></a></li>
+          <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
         </ul>
       </div>
     </div>
-
   </div>
-
-
 </div>
-
 </body>
 </html>
